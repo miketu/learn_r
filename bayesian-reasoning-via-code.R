@@ -1,4 +1,23 @@
+# 2026-03-10 minimalist bayesian code
 
+require(tidyverse)
+
+coin_rolls <- c()
+for(update in seq(from=1,to=30)){
+
+#priors
+heads <- 1
+tails <- 10
+
+#update
+coin_rolls <- append(coin_rolls,sample(c(0,1),1)) # Random Coin Toss
+
+data <- data.frame(x=seq(0, 1, length.out = 100)) |> 
+        mutate(original=dbeta(x,heads,tails)/(heads+tails)) |>
+        mutate(update=dbeta(x,heads+sum(coin_rolls),tails+(length(coin_rolls)-sum(coin_rolls)))/(heads+tails+length(coin_rolls)))
+
+
+print(ggplot(data,aes(x,))+geom_point(aes(y=original),color="black")+geom_point(aes(y=update),color="red")+ggtitle(paste(update," ",coin_rolls[length(coin_rolls)])))}
 # Animation to Show Off Coin Flips and Dice Tosses! ------------------------
 
 library(animation)
