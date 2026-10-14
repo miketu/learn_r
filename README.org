@@ -1,10 +1,9 @@
-* 📊💻⚙️Programming in R (Data Analysis Focused Language)
+
+* 🎲📈 Data Analysis, Probability, and Statistics Theory Intuition in R
 
 [[ggplot-basic-diamond-plots.R]] - Basic of many kinds of plots using ggplot
 
 [[tidyverse-basic-data-summary.R]] - Using tidyverse filtering/summary methods
-
-* 🎲📈 Probability and Statistics Theory Intuition 
 
 [[rigged_coin_flips.R]] -  Using rigged coins to demonstrate probability/statistics concepts
 
@@ -20,6 +19,8 @@
 🔨 [[table_combining.org]] - Joining together tables in Org-mode
 
 🚀 [[bouncing-ball.R]]  - R simulation of bouncing ball
+
+🚀 [[bouncing ball.lua]]  - Lua simulation of bouncing ball
 
 🚀 [[stock_monte_carlo.R]] - R simulation of stock returns from historical values
 
